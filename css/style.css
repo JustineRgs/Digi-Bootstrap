@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "FuturaLight" ;
+	src: url(../fonts/futura-light-webfont.woff);
+}
+
+@font-face {
+    font-family: "FuturaMedium" ;
+	src: url(../fonts/futura_medium_bt-webfont.woff);
+}
+
+@font-face {
+    font-family: "FuturaBook";
+	src: url(../fonts/futura_book_font-webfont.woff);
+}
+
+@font-face {
+    font-family: "SophiaRegular";
+	src: url(../fonts/sofia_pro_regular-webfont.woff);
+}
+.fontFuturaLight{
+    font-family: "FuturaLight";
+}
+
+.fontFuturaMedium{
+    font-family: "FuturaMedium";
+}
+
+.fontFuturaBook{
+    font-family: "FuturaBook";
+}
+
+.fontSophiaRegular{
+    font-family: "SophiaRegular";
+}
+
+.button {
+    left: 166px;
+    bottom: 330px;
+}
+
+#banner{
+    background-image: url('../images/banniere_fleurie.png');
+    height: 330px;
+    background-position: 74% 55%;
+    background-size: initial;
+}
+
+.bg-light{
+    background-color: #f3f3f3 !important;
+}
+
+.fontSize-small{
+    font-size: 13px;
+}
+
+.fontSize-smalll{
+    font-size: 11px;
+}
+
+.promo {
+    left: 35px;
+    top: 0;
+}
+
+.Item-HDP {
+    position: relative;
+    left: 90%;
+    bottom: 208px;
+}
+
+.hoverBottom:hover{
+    border-bottom: 2px solid #000000;
+}
+
+@media  screen and (min-width: 992px) {
+    #banner{
+        background-image: url('../images/banniere_fleurie.png');
+        height: 670px;
+        background-position: 52% 60% !important;
+        background-size: initial;
+    }
+}
+@media  screen and (min-width: 768px) {
+    #banner{
+        background-image: url('../images/banniere_fleurie.png');
+        background-position: 84% 56%;
+        background-size: initial;
+    }
+}

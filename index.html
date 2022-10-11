@@ -4,45 +4,361 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tp bootstrap">
+    <meta name="keywords" content="TP, bootstrap">
+    <meta name="author" content="Justine & Emily">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <title>Document</title>
 </head>
+
 <body>
-<div class="container-fluid bg-black p-2 mb-5">
-    <section class="fst-italic row justify-content-center align-items-center w-75 mx-auto">
-        <p class="text-white col-6 mb-0 fs-6">Free shipping on orders over $69.00</p>
-        <div class="col-6 text-end">
-            <a href="#" class="text-decoration-none text-white">About</a>
-            <a href="#" class="text-decoration-none text-white">FAQ's</a>
-            <a href="#" class="text-decoration-none text-white">Location</a>
-            <a href="#" class="text-decoration-none text-white">Sport</a>
-        </div>
+<!-- Début Div mini header noir --> 
+<div class="container-fluid bg-black px-4 mb-5 fontFuturaLight">
+   <!-- Début Section Row -->
+   <section class="row justify-content-center align-items-center fst-italic fontSize-smalll">
+        <p class="text-white col-sm-6 text-center mb-0">Free shipping on orders over $69.00</p>
+
+        <!-- Début Nav -->
+        <nav class="col-sm-6 text-center d-flex justify-content-center">
+            <ul class="nav mx-0">
+                <li class="nav-item">
+                  <a class="nav-link text-white" aria-current="page" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">FAQ's</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Location</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Sport</a>
+                </li>
+              </ul>
+        </nav>
+        <!-- Fin Nav -->
     </section>
+    <!-- Fin Section Row -->
+
 </div>
+<!-- Fin Div mini header noir --> 
 
-<header class="container text-center text-uppercase mt-5">
-<img class="mb-4" src="images/logo.png" alt="Logo">
-    <nav class="row">
-        <div class="col">
-            <a href="#" class="text-decoration-none text-black">English</a>
-            <a href="#" class="text-decoration-none text-black">USD</a>
-        </div>
-        <div class="col">
-            <a href="#" class="text-decoration-none text-black">Affiches</a>
-            <a href="#" class="text-decoration-none text-black">Stickers</a>
-            <a href="#" class="text-decoration-none text-black">Papier peint</a>
-            <a href="#" class="text-decoration-none text-black">Tapis</a>
-            <a href="#" class="text-decoration-none text-black">Peinture</a>
-        </div>
-        <div class="col">
-            <img src="images/loupe.png" alt="loupe" class="border-end px-2 ">
-            <img src="images/coeur.png" alt="coeur" class="border-end px-2">
-            <img src="images/bonhomme.png" alt="bonhomme" class="border-end px-2">
-            <img src="images/caddie.png" alt="caddie" class="px-2">
-        </div>
+<!-- Début Header principal-->
+<header class="container text-center mb-5">
+
+    <img class="mb-4 mt-5" src="images/logo.png" alt="Logo">
+    <!-- Début nav -->
+    <nav class="row align-items-center fw-bolder justify-content-between">
+        <!-- Début ul 1 -->
+        <ul class="nav col-md-3 mb-2 me-0 d-flex flex-start text-start fontFuturaBook justify-content-start">
+            <li class="nav-item pe-3"><a href="#" class="col-3 text-decoration-none text-black">English</a></li>
+            <li class="nav-item"><a href="#" class="col-2 text-decoration-none text-black">USD <ion-icon name="chevron-down-outline"></ion-icon></a></li>
+        </ul>
+        <!-- Fin ul 1 -->
+        <!-- Début ul Menu -->
+        <ul class="nav col-md-5 mb-2 text-uppercase fontFuturaMedium justify-content-center">
+            <li class="nav-item pe-3"><a href="#" class="text-decoration-none text-black px-2 pb-2 hoverBottom">Affiches</a></li>
+            <li class="nav-item pe-3"><a href="#" class="text-decoration-none text-black px-2 pb-2 hoverBottom">Stickers</a></li>
+            <li class="nav-item pe-3"><a href="#" class="text-decoration-none text-black px-2 pb-2 hoverBottom">Papier peint</a></li>
+            <li class="nav-item pe-3"><a href="#" class="text-decoration-none text-black px-2 pb-2 hoverBottom">Tapis</a></li>
+            <li class="nav-item pe-3"><a href="#" class="text-decoration-none text-black px-2 pb-2 hoverBottom">Peinture</a></li>
+        </ul>
+        <!-- Fin ul Menu -->
+        <!-- Début ul Pictos -->
+        <ul class="nav col-md-4 mb-2 row justify-content-end ">
+            <li class="nav-item Icon col-2 border-end px-3">
+                <a href="#" class="text-decoration-none"><img src="images/loupe.png" alt="loupe" class=""></a>
+            </li>
+            <li class="nav-item Icon col-2 border-end px-3">
+                <a href="#" class="text-decoration-none"><img src="images/coeur.png" alt="coeur" class=""></a>
+            </li>
+            <li class="nav-item Icon col-2 border-end px-3">
+                <a href="#" class="text-decoration-none"><img src="images/bonhomme.png" alt="bonhomme" class=""></a>
+            </li>
+            <li class="nav-item Icon col-2 px-3">
+                <a href="#" class="text-decoration-none"><img src="images/caddie.png" alt="caddie" class=""></a>
+            </li>
+        </ul>
+        <!-- Fin ul Pictos -->
     </nav>
-</header>
+    <!-- Fin nav -->
 
+</header>
+<!-- Fin Header principal -->
+
+<!-- Début Main -->
+<main class="container">
+  <!-- Début Section Row principale --> 
+  <div class="row justify-content-center"> 
+
+        <!-- Début Section Bannière Cta -->
+        <div class="row justify-content-center align-items-center pt-5 mb-4" id="banner">
+            <button href="#" class="col-6 col-md-3 col-xl-2 offset-lg-6 text-uppercase btn btn-dark btn-lg rounded-0 fs-6 mt-5">buy it now</button>
+        </div>
+        <!-- Fin Section Bannière Cta -->
+
+       <!-- Début Section Feature Designer & Papier peints -->
+       <div class="row pe-0 ps-0">
+            <!-- Début Col 1 image Feature Designer -->
+            <div class="col-md-12 col-xl-6 mb-2 pe-1 justify-content-center ps-0">
+                <img class="img-fluid" src="images/cocotka.png" alt="cocotka">
+            </div>
+            <!-- Fin Col 1 image Feature Designer -->
+            <!-- Début Col 2 Papier peints -->
+            <div class="col-md-12 col-xl-6 px-0"><img class="img-fluid" src="images/Groupe_12.png" alt="rectangle">                
+            </div>
+        </div>
+            
+            <!-- <div class="col-md-6 bg-light fontFuturaMedium ms-0 pt-5 ps-5">
+                <h2 class="h4 text-uppercase">papier peints</h2>
+                <p class="mb-4">Motifs floraux</p>
+                <p class="font-size-sm text-uppercase fontSize-small font-weight-bold">buy it now</p>
+            </div> -->
+                <!-- <img class="img-fluid" src="images/rectangle.png" alt="rectangle"> -->
+            <!-- Fin Col 2 Papier peints -->
+        </div>
+        <!-- Fin Section Feature Designer & Papier peints -->
+
+        <!-- Début Section Featured Product -->
+        <div class="px-0 mb-5">
+
+            <h2 class="h4 text-uppercase fontFuturaMedium mb-4 mt-3">Featured Product</h2>
+             <!-- Début row nav -->
+             <div class="row border-top border-bottom ms-0 me-0 justify-content-between  mb-5">
+                <!-- Début Col 1 navbar -->
+                <div class="col-6 px-0 fontSize-small">
+                    <!-- Début navbar -->
+                    <nav class="nav nav-left text-uppercase fontFuturaMedium justify-content-between">
+                        <a class="nav-link border-top border-bottom border-dark active px-0" aria-current="page" href="#">furnitures</a>
+                        <a class="nav-link text-decoration-none text-secondary px-0" href="#">wall decals </a>
+                        <a class="nav-link text-secondary text-decoration-none px-0" href="#">tapis</a>
+                        <a class="nav-link text-secondary text-decoration-none px-0" href="#">wallpapers</a>
+                        <a class="nav-link text-secondary text-decoration-none px-0" href="#">peintures</a>
+                    </nav>
+                    <!-- Fin navbar -->
+                    </div>
+                    <!-- Fin Col 1 navbar -->
+                    <!-- Début Col 2 bullet point -->
+                    <div class="col-2 row align-items-center justify-content-end px-0 m-0">
+                        <ion-icon class="col-1 px-0" name="ellipse"></ion-icon>
+                        <ion-icon class="col-1 px-0 text-black-50"name="ellipse"></ion-icon>
+                        <ion-icon class="col-1 px-0 text-black-50" name="ellipse"></ion-icon>
+                    </div>
+                    <!-- Fin Col 2 bullet point -->
+                </div>
+                <!-- Fin row nav -->
+                    <!-- Début Row Produits -->
+                    <div class="row px-0 gx-5">
+                        <!-- Début Col 1 Produits -->
+                        <div class="col-12 col-sm-6 col-md-3 fontFuturaLight position-relative">
+                            <img src="images/balayette.png" alt="balayette" class="img-fluid">
+                            <p class="promo bg-dark text-white text-center position-absolute px-2 mt-2">On sale !</p>
+                            <p class="promo bg-dark text-white text-center position-absolute px-2 mt-5">- 20%</p>
+                            <p class="text-center mb-2 fw-bold mt-4">Nom du produit</p>
+                            <div class="d-flex justify-content-evenly">
+                                <span class="text-black-50 text-decoration-line-through">€68.00</span>
+                                <span class="fw-bold">€54.40</span>
+                            </div>
+                        </div>
+                    <!-- Fin Col 1 Produits -->
+                    <!-- Début Col 2 Produits -->
+                    <div class="col-12 col-sm-6 col-md-3 fontFuturaLight position-relative">
+                        <img src="images/balayette.png" alt="balayette" class="img-fluid">
+                        <p class="promo bg-dark text-white text-center position-absolute px-2 mt-2">On sale !</p>
+                        <p class="promo bg-dark text-white text-center position-absolute px-2 mt-5">- 20%</p>
+                        <p class="text-center mb-2 fw-bold mt-4">Nom du produit</p>
+                        <div class="d-flex justify-content-evenly">
+                            <span class="text-black-50 text-decoration-line-through">€68.00</span>
+                            <span class="fw-bold">€54.40</span>
+                        </div>
+                    </div>
+                    <!-- Fin Col 2 Produits -->
+                    <!-- Début Col 3 Produits -->
+                    <div class="col-12 col-sm-6 col-md-3 fontFuturaLight">
+                        <img src="images/balayette.png" alt="balayette" class="img-fluid">
+                        <p class="text-center mb-2 fw-bold mt-4">Nom du produit</p>
+                        <div class="d-flex justify-content-evenly">
+                            <span class="text-black-50 text-decoration-line-through">€68.00</span>
+                            <span class="fw-bold">€54.40</span>
+                        </div>
+                    </div>
+                    <!-- Fin Col 3 Produits -->
+                    <!-- Début Col 4 Produits -->
+                    <div class="col-12 col-sm-6 col-md-3 fontFuturaLight">
+                        <img src="images/balayette.png" alt="balayette" class="img-fluid">
+                        <p class="text-center mb-2 fw-bold mt-4">Nom du produit</p>
+                        <div class="d-flex justify-content-evenly">
+                            <span class="text-black-50 text-decoration-line-through">€68.00</span>
+                            <span class="fw-bold">€54.40</span>
+                        </div>
+                    </div>
+                    <!-- Fin Col 4 Produits -->
+                </div>
+                <!-- Fin Row Produits -->       
+            </div>
+            <!-- Fin Section Featured Product -->
+
+            <!-- Début Section This week Stay inspired with our Collections -->
+            <div class="d-flex  px-0 flex-column my-5 align-items-center">
+
+                <h2 class="h4 text-center fontFuturaLight text-uppercase mb-4">This week<br><span class="h2 nimbusRegita text-lowercase">Stay inspired with our Collections</span></h2>
+                <div class="bg-dark mb-4" style="width: 50px; height: 2px;"></div>
+                <p class="fontSophiaRegular text-black-50 text-center w-50 mx-0 fontSize-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+                <img src="images/banniere2.png" alt="bannière produits" class="img-fluid">
+            </div>
+            <!-- Fin Section This week Stay inspired with our Collections -->
+            
+           <!-- Début Section What's happen Weekly Promotions -->
+           <div class="row px-0 align-items-center mb-5">
+                 <!-- Début Col 1 Text-->
+                 <div class="col px-0">
+                    <h2 class="h4 fontFuturaLight text-uppercase mb-4 text-start">what happen’s<br><span class="h2 nimbusRegita text-lowercase">Weekly Promotions</span></h2>
+                    <div class="bg-dark mb-4" style="width: 50px; height: 2px;"></div>
+                    <p class="fontSophiaRegular text-black-50 text-start w-50 mx-0 fontSize-small my-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate </p>
+                    <button type="button" class="btn btn-dark btn-lg text-uppercase rounded-0 fontSize-small">view promotions</button>
+                </div>
+                <!-- Fin Col 1 Text-->
+                <!-- Début Col 2 image bébé -->
+                <div class="col px-0">
+                    <img src="images/bb.png" alt="Image bébé" class="img-fluid">
+                </div> 
+                 <!-- Fin Col 2 image bébé -->
+           </div>  
+           <!-- Fin Section What's happen Weekly Promotions -->
+
+           <!-- Début Section instagram -->
+           <div class="d-flex flex-column align-items-center mb-5">
+
+                <h2 class="h4 fontFuturaLight text-uppercase mb-4 text-center">follow us<br><span class="h2 nimbusRegita text-lowercase">Share your room on Instagram</span></h2>
+                <div class="bg-dark mb-5" style="width: 50px; height: 2px;"></div>
+
+                <!-- Début Div row images instagram-->
+                <div class="row">
+                    <!-- Début Colonne 1 -->
+                    <div class="col">
+                        <img src="images/cubes2.png" alt="image instagram" class="img-fluid">
+                    </div>
+                    <!-- Fin Colonne 1-->
+                    <!-- Début Colonne 2 -->
+                    <div class="col">
+                        <img src="images/cubes2.png" alt="image instagram" class="img-fluid">
+                    </div>
+                    <!-- Fin Colonne 2-->
+                    <!-- Début Colonne 3 -->
+                    <div class="col">
+                        <img src="images/cubes2.png" alt="image instagram" class="img-fluid">
+                    </div>
+                    <!-- Fin Colonne 3-->
+                    <!-- Début Colonne 4 -->
+                    <div class="col">
+                        <img src="images/cubes2.png" alt="image instagram" class="img-fluid">
+                    </div>
+                    <!-- Fin Colonne 4-->
+                    <!-- Début Colonne 5 -->
+                    <div class="col">
+                        <img src="images/cubes2.png" alt="image instagram" class="img-fluid">
+                    </div>
+                    <!-- Fin Colonne 5-->
+                </div>
+                <!-- Fin Div row images instagram-->
+           </div>
+           <!-- Fin Section instagram -->
+
+        <!-- Début Section Info livraison -->
+        <div class="row mb-5 mt-4">
+            <!-- Début Col 1 Livraison -->
+            <div class="col text-center border-end">
+                <img src="images/camion.png" alt="Picto camion" class="mb-4">
+                <p class="fontFuturaMedium text-uppercase">Free shipping wordlwide<br>                
+                <span class="fontSophiaRegular text-lowercase text-black-50 fontSize-small fw-bolder">Free orders over €150</span>
+                </p>
+            </div>
+            <!-- Fin Col 1 Livraison -->
+            <!-- Début Col 2 Retour et échange -->
+            <div class="col text-center border-end">
+                <img src="images/fleche-qui-tournent.png" alt="Picto retour et échange" class="mb-4">
+                <p class="fontFuturaMedium text-uppercase">Free return exchange<br>                
+                <span class="fontSophiaRegular text-lowercase text-black-50 fontSize-small fw-bolder">21 days free return policy</span>
+                </p>
+            </div>
+            <!-- Fin Col 2 Retour et échange -->
+            <!-- Début Col 2 Retour et échange -->
+            <div class="col text-center">
+                <img src="images/casque.png" alt="Picto Service client" class="mb-4">
+                <p class="fontFuturaMedium text-uppercase">Quality support 24/7<br>                
+                <span class="fontSophiaRegular text-lowercase text-black-50 fontSize-small fw-bolder">Top notch customer services</span>
+                </p>
+            </div>
+            <!-- Fin Col 2 Retour et échange -->
+        </div>
+        <!-- Fin Section Info livraison -->
+        
+    </div>
+    <!-- Fin Section Row principale -->
+</main>
+<!-- Fin Main -->
+
+<!-- Début Footer-->
+<footer class="container-fluid bg-black text-white fontSize-small pt-3 pb-2 position-relative">
+    <div class="row justify-content-center">
+        <div class="col-sm-5 col-lg-2 my-5">
+            <h6 class="text-uppercase mb-4 fontFuturaMedium">company</h3>
+            <ul class="list-group fontFuturaLight">
+                <a href="#" class="text-capitalize list-group text-decoration-none text-white mb-1">about us</a>
+                <a href="#" class="text-capitalize list-group text-decoration-none text-white mb-1">contact us</a>
+                <a href="#" class="text-capitalize list-group text-decoration-none text-white mb-1">store locator</a>
+                <a href="#" class="text-capitalize list-group text-decoration-none text-white mb-1">team member</a>
+                <a href="#" class="text-capitalize list-group text-decoration-none text-white mb-1">affilate</a>
+            </ul>
+        </div>
+        <div class="col-sm-5 col-lg-2 my-5">
+            <h6 class="text-uppercase mb-4 fontFuturaMedium">informations</h3>
+            <ul class="list-group fontFuturaLight">
+                <a href="#" class="text-capitalize list-group text-decoration-none text-white mb-1">about us</a>
+                <a href="#" class="text-capitalize list-group text-decoration-none text-white mb-1">contact us</a>
+                <a href="#" class="text-capitalize list-group text-decoration-none text-white mb-1">store locator</a>
+                <a href="#" class="text-capitalize list-group text-decoration-none text-white mb-1">team member</a>
+                <a href="#" class="text-capitalize list-group text-decoration-none text-white mb-1">affilate</a>
+            </ul>
+        </div>
+        <div class="col-sm-5 col-lg-2 my-5">
+            <h6 class="text-uppercase mb-4 fontFuturaMedium">informations</h3>
+            <ul class="list-group fontFuturaLight">
+                <a href="#" class="text-capitalize list-group text-decoration-none text-white mb-1">about us</a>
+                <a href="#" class="text-capitalize list-group text-decoration-none text-white mb-1">contact us</a>
+                <a href="#" class="text-capitalize list-group text-decoration-none text-white mb-1">store locator</a>
+                <a href="#" class="text-capitalize list-group text-decoration-none text-white mb-1">team member</a>
+                <a href="#" class="text-capitalize list-group text-decoration-none text-white mb-1">affilate</a>
+            </ul>
+        </div>
+        <div class="col-sm-5 col-lg-2 my-5">
+            <h6 class="text-uppercase mb-4 fontFuturaMedium">newletters</h3>
+            <ul class="list-group fontFuturaLight">
+                <p class="text-capitalize list-group fst-italic mb-3 fontSize-smalll">For receive updates on promotions & coupons</p>
+                <input class="mb-3" type="email" id="emailAdress" name="emailAdress" placeholder="Your adress email" />
+                <button href="#" class="text-uppercase btn btn-light fontFuturaMedium rounded-0 px-0 me-5 fontSize-small w-50"">suscribe</button>
+            </ul>
+        </div>
+    </div>
+    <div class="row justify-content-center pt-3 mt-5">
+        <div class="col-sm-6 col-lg-4 pt-2 px-0 border-top border-secondary d-flex">
+            <div class="text-uppercase me-1">ⓒ 2020 kabar</div>
+            <p>Store. All rights reserved</p> 
+            </div>
+        <div class="col-4 pt-2 px-0 border-top border-secondary d-flex justify-content-end">
+            <ion-icon class="px-2" name="logo-facebook"></ion-icon>
+            <ion-icon class="px-2"name="logo-twitter"></ion-icon>
+            <ion-icon class="px-2"name="logo-linkedin"></ion-icon>
+            <ion-icon class="px-2"name="logo-pinterest"></ion-icon>
+            <ion-icon class="ps-2"name="logo-instagram"></ion-icon>
+        </div>
+        <a href="#top"><ion-icon class="Item-HDP text-white fs-1 position-absolute" name="chevron-up-circle-sharp"></ion-icon></a>
+    </div>
+</footer>
+<!-- Fin Footer-->
 </body>
 </html>
